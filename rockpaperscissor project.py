@@ -5,6 +5,8 @@
 
 
 
+import secrets
+
 def takePlayerInput():
     player = "blank"
     while not( player.lower() == "r" or player.lower() == "p" or player.lower() == "s") :
@@ -17,15 +19,9 @@ def takePlayerInput():
 
 takePlayerInput()
 
-
-# In[4]:
-
-
-import random 
-
 def getBotInput():
     lst = ['r','s','p']
-    return random.choice(lst)
+    return secrets.SystemRandom().choice(lst)
 
 
 # In[5]:
