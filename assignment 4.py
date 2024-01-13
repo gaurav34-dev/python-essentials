@@ -7,8 +7,6 @@
 
 
 for n in range(1042000,702648265):
-    global s;
-    global m;
     s=0;
     m=n;
     while(n!=0):
